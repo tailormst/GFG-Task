@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.footer {
+    width: 76vw;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(228, 227, 227, 0.473);
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-foot {
+    width: 55%;
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    row-gap: 100px;
+}
+
+.first-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.left-foot .first-left img {
+    filter: invert(50%);
+    width: 70px;
+    margin-right: 10px;
+}
+
+.left-foot .first-left div {
+    letter-spacing: 3px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 600;
+    font-size: 20px;
+    color: #605f5f;
+}
+
+.left-foot .sec-left p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #605f5f;
+    word-spacing: 2px;
+    text-align: justify;
+}
+
+.third-left a {
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.third-left a img {
+    width: 30px;
+    height: auto;
+    filter: invert(50%);
+}
+
+.right-foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: left;
+}
+
+.row-1,
+.row-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: left;
+}
+
+.row-2 a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #605f5f;
+    padding-right: 20px;
+}
+
+.line-1 {
+    width: 77vw;
+    height: 7px;
+    background: linear-gradient(90deg, #39D1F9 0%, #FFB400 20%, #00827B 40%, #008AFF 60%, #FF3200 80%, #9896FF 100%);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.line-2 {
+    width: 73vw;
+    height: 7px;
+    margin: auto;
+    background: linear-gradient(90deg, #39D1F9 0%, #FFB400 20%, #00827B 40%, #008AFF 60%, #FF3200 80%, #9896FF 100%);
+    opacity: 0.4;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.line-3 {
+    width: 70vw;
+    height: 7px;
+    margin: auto;
+    background: linear-gradient(90deg, #39D1F9 0%, #FFB400 20%, #00827B 40%, #008AFF 60%, #FF3200 80%, #9896FF 100%);
+    opacity: 0.2;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 575px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-foot {
+        width: 100%;
+        grid-row: auto;
+    }
+
+    .right-foot {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .third-left a img {
+        width: 25px;
+    }
+
+    .left-foot .sec-left p {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .first-left {
+        flex-direction: column;
+    }
+
+    .left-foot .first-left div {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .right-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .left-foot .sec-left p {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .first-left {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .left-foot {
+        width: 50%;
+    }
+
+    .right-foot {
+        width: 50%;
+    }
+
+    .left-foot .sec-left p {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .left-foot .sec-left p {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1400px) {}

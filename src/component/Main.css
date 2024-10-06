@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+main {
+    margin-top: 200px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.one .sec-one {
+    width: 80vw;
+    margin: auto;
+}
+
+.one .sec-nav {
+    border-radius: 20px;
+    background-color: #e4e5e796;
+    padding: 10px 20px;
+}
+
+.one .sec-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+
+.one .content {
+    text-align: left;
+    margin-top: 40px;
+    width: 60vw;
+}
+
+.one .content h1 {
+    font-size: 50px;
+    color: #212529;
+}
+
+.one .content .subheading {
+    font-size: 25px;
+    margin: 20px 0;
+    color: #343536;
+}
+
+.one .content .cta-btn {
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #898c8f;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.one .content .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.one .chart {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.one .chart img {
+    width: 100%;
+}
+
+.two {
+    margin-top: 50px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.two > h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+}
+
+.feature-card {
+    background-color: #d5d5d52d;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    transition: transform 0.3s;
+    width: 80%;
+    padding: 0 0 20px 20px;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-grid .feature-card h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.feature-grid .feature-card p {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: left;
+}
+
+.feature-grid .feature-card img {
+    width: 200px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    width: 76vw;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.about-text{
+    margin-bottom: 50px;
+}
+.about-text h1 {
+    font-size: 36px;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 25px;
+    word-spacing: 3px;
+    color: #404041c9;
+    margin-bottom: 20px;
+    width: 55%;
+}
+
+.learn-more {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid #000;
+}
+
+.em {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 40px;
+}
+
+.em .em-1 img{
+    width: 95%;
+}
+.em .em-2 img{
+    width: 66%;
+}
+.em .em-3 img{
+    width: 66%;
+}
+
+.faq-section {
+    width: 75%;
+    margin: auto;
+    display: flex; 
+    margin-top: 100px;
+}
+
+.faq-header {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.faq-content {
+    flex: 2; 
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 75%;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e9ecef;
+}
+
+.plus {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-top: none;
+    font-size: 16px;
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.see-more:hover {
+    border-bottom: 1px solid #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 575px) {
+    .one .sec-one {
+        padding: 8px 15px;
+        width: 90vw;
+    }
+
+    .one .sec-nav {
+        display: none;
+    }
+
+    .one .content {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .one .content h1 {
+        font-size: 28px;
+    }
+
+    .one .content .subheading {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .one .content .cta-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .one .chart {
+        margin-top: 30px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .feature-grid .feature-card img {
+        width: 130px;
+    }
+
+    .em {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40px;
+    }
+    .about-em {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .em .em-2 img{
+        width: 88%;
+    }
+    .em .em-3 img{
+        width: 88%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .one .sec-one {
+        width: 80vw;
+    }
+
+    .one .sec-nav {
+        display: none;
+    }
+
+    .one .content {
+        width: 85vw;
+        text-align: center;
+    }
+
+    .one .content h1 {
+        font-size: 32px;
+    }
+
+    .one .content .subheading {
+        font-size: 18px;
+    }
+
+    .one .content .cta-btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .feature-grid .feature-card img {
+        width: 150px;
+    }
+
+    .em {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .about-em {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .em .em-2 img{
+        width: 88%;
+    }
+    .em .em-3 img{
+        width: 88%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .one .sec-one {
+        width: 90vw;
+    }
+
+    .one .sec-nav {
+        display: none;
+    }
+
+    .one .content {
+        width: 70vw;
+        text-align: left;
+    }
+
+    .one .content h1 {
+        font-size: 36px;
+    }
+
+    .one .content .subheading {
+        font-size: 20px;
+    }
+
+    .one .content .cta-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .feature-grid .feature-card img {
+        width: 180px;
+    }
+
+    .em {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .about-em {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .em .em-2 img{
+        width: 88%;
+    }
+    .em .em-3 img{
+        width: 88%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .one .sec-one {
+        width: 90vw;
+    }
+
+    .one .content {
+        width: 65vw;
+    }
+
+    .one .content h1 {
+        font-size: 42px;
+    }
+
+    .one .content .subheading {
+        font-size: 22px;
+    }
+
+    .em {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 40px;
+    }
+
+    .about-em {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .em .em-2 img{
+        width: 90%;
+    }
+    .em .em-3 img{
+        width: 90%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .one .sec-one {
+        width: 80vw;
+    }
+
+    .one .content h1 {
+        font-size: 50px;
+    }
+
+    .one .content .subheading {
+        font-size: 25px;
+    }
+
+    .one .content .cta-btn {
+        font-size: 18px;
+    }
+}
