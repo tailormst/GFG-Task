@@ -26,13 +26,13 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="third-left">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/gfg_rbu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                             <img src={instaImg} alt="Instagram" />
                         </a>
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <img src={twitterImg} alt="Twitter" />
                         </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
+                        <a href="https://discord.com/invite/DZgFKumKAm" target="_blank" rel="noopener noreferrer">
                             <img src={discordImg} alt="Discord" />
                         </a>
                         <a href="#" target="_blank" rel="noopener noreferrer">
