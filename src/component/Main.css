@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .one {
@@ -242,6 +242,7 @@ h2 {
 }
 
 .faq-answer {
+    width: 75%;
     display: none;
     padding: 15px;
     background-color: #fff;
@@ -344,6 +345,15 @@ h2 {
     .em .em-3 img{
         width: 88%;
     }
+    
+    .faq-header {
+        flex: 0; 
+        padding-right: 10px; 
+    }
+
+    h2 {
+        display: none;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -399,6 +409,15 @@ h2 {
     }
     .em .em-3 img{
         width: 88%;
+    }
+
+    .faq-header {
+        flex: 0; 
+        padding-right: 10px; 
+    }
+
+    h2 {
+        display: none;
     }
 }
 
